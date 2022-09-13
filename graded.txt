@@ -1,0 +1,5 @@
+README existence: 5/5 points
+.gitignore existence: 3/3 points {.gitignore File exist}
+correct .gitignore file contents (*.bin) : 0/2 points
+
+Total: 8/10

@@ -1,6 +1,9 @@
 import { createServerClient, type CookieOptions } from '@supabase/ssr'
 import { cookies } from 'next/headers'
 
+const NEXT_PUBLIC_SUPABASE_URL = "https://hohfglmwtxowakbhumgj.supabase.co";
+const NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvaGZnbG13dHhvd2FrYmh1bWdqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTkwNjExMTYsImV4cCI6MjAxNDYzNzExNn0.43T-tx3DSYlOaJzjoAxw6zXY_IjcbHEv5RsOu98x8NQ";
+
 export const createClient = (cookieStore: ReturnType<typeof cookies>) => {
   return createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,

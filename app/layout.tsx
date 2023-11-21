@@ -1,5 +1,8 @@
+//import * as React from 'react'
+import { ChakraProvider } from "@chakra-ui/react";
 import { GeistSans } from 'geist/font'
 import './globals.css'
+
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -20,7 +23,9 @@ export default function RootLayout({
     <html lang="en" className={GeistSans.className}>
       <body className="bg-background text-foreground">
         <main className="min-h-screen flex flex-col items-center">
+        <ChakraProvider>
           {children}
+          </ChakraProvider>
         </main>
       </body>
     </html>

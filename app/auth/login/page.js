@@ -2,7 +2,7 @@ import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
 import { NextResponse } from 'next/server'
 
-async function POST(request) {
+export async function POST(request) {
   const requestUrl = new URL(request.url)
   const formData = await request.formData()
   const email = formData.get('email')

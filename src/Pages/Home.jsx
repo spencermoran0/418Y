@@ -7,7 +7,7 @@ function Home() {
   return (
     <div>
     <Navbar />
-      <section>
+      <section className='HomePage'>
         <h1>Home Page</h1>
       </section>
 

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #BFC0C0;
+}
+
+h1, h1 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0, 40px;
+}
+
+
+/* SearchingBar page */
+/*  */
+/*  */
+/* Section Style */
+.SearchBar{
+    min-height: 850px;
+    background-color:#BFC0C0;
+}
+    
+.SearchBar .container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+    max-width: 1700px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0, 40px;
+    justify-content: center;
+    min-height: 850px;
+}
+
+
+.SearchBar label{
+    font-size: 45px;
+    color: #8D021F;
+}
+
+.SearchBar input {
+    background-color: #0A0A0A;
+    font-size: large;
+    color: #BFC0C0;
+    width: 500px;
+    height: 40px;
+
+    border-radius: 10px;
+    border: 1px solid #8D021F; /* Border styling */
+    padding: 5px; /* Internal spacing */
+    outline: none; /* Removes the default focus outline, optional */
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    filter: invert(24%) sepia(95%) saturate(7484%) hue-rotate(345deg) brightness(65%) contrast(88%);
+}

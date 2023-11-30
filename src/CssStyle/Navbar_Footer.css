@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #8D021F;
+    line-height: 1.6;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* use viewport height */
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #BFC0C0;
+}
+
+h1, h1 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0, 40px;
+}
+
+
+/* NavBar Styiling:*/
+
+.navbar {
+    background-color: #0A0A0A;
+    height: 80px;
+}
+
+.navbar .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .left-side {
+    display: flex;
+    align-items: center
+}
+ .navbar ul {
+    display: flex;
+ }
+
+ .navbar .NavSignUp, .NavLogin, .NavSearch {
+    padding: 10px;
+    color: #BFC0C0;
+    font-size: 18px;
+    margin: 0 5px;
+ }
+
+ .navbar .NavSignUp:hover , .NavLogin:hover, .NavSearch:hover{
+    border-bottom: 2px #BFC0C0 solid;
+ }
+
+.navbar .container .MovieName-link{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+    color: #8D021F;
+    font-size: 35px;
+}
+
+.navbar .container .RankerName-link {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+    color: #5E1914;
+    font-size: 35px;
+}
+
+.NavLogo {
+    height: 65px;
+    width: auto;
+    align-items: center;
+    padding-top: 2px;
+}
+
+/* Navbar Styiling Complete */
+
+
+/* Footer Styiling*/
+
+.footer {
+    background-color: #0A0A0A;
+    height: 250px;
+}
+
+/* Footer Styiling Complete */

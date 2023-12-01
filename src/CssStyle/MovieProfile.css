@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+.movie-profile {
+  background-color: #BFC0C0;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-profile h1 {
+  color: #8D021F;
+  text-align: center;
+}
+
+.movie-profile p {
+  color: #0A0A0A;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+/* Add additional styling as needed */

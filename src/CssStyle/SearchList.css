@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
-*{
+/* Resetting basic styles */
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
 
 ul {
     list-style-type: none;
@@ -16,10 +16,10 @@ a {
     color: #BFC0C0;
 }
 
-h1, h1 {
+/* General Styling */
+h1, h2 {
     font-weight: 300;
     line-height: 1.2;
-    margin: 10px 0;
 }
 
 p {
@@ -41,25 +41,49 @@ img {
     max-width: 1700px;
     margin: 0 auto;
     overflow: auto;
-    padding: 0, 40px;
+    padding: 0 40px;
 }
 
+/* Search List Specific Styles */
+.SearchResults {
+    background-color: #BFC0C0; /* Matching background color with SearchBar */
+    padding: 20px;
+}
 
-
-
-/* Search List  */
- /*  */
- /*  */
-
- .MovieList{
+.MovieList {
     min-height: 850px;
-    background-color:#BFC0C0;
 }
 
+.movie-box {
+    background-color: #0A0A0A; /* Consistent with SearchBar input */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners like the input box */
+    color: #BFC0C0; /* Matching text color with SearchBar input */
+}
 
+.movie-box h2 {
+    color: #8D021F; /* Matching color of the label in SearchBar */
+    margin-bottom: 10px;
+}
 
+.SearchResults .searchannouncment {
+    color: #8D021F; /* Consistent with SearchBar label */
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Prominent size */
+    text-align: center; /* Center aligned */
+    font-family: 'Roboto Condensed', sans-serif; /* Consistent font family */
+}
 
-
-.AppSection{
+.AppSection {
     min-height: 550px;
 }
+
+/* Hover effects for dynamic interaction */
+.movie-box:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Adding shadow for depth */
+}
+
+/* End of SearchList Styles */

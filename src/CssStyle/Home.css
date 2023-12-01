@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+/* Welcome section */
+.WelcomeMessage h1 {
+    font-size: 40px;
+    color: #8D021F;
+}
+
+/* 
+.header-container {
+    text-align: center;
+}
+*/
+
+.WelcomeMessage {
+    min-height: 250px;
+    background-color: #BFC0C0;
+}
+
+/* Subscription Details section */
+.SubscriptionDetails {
+    background-color: #BFC0C0;
+    padding: 20px;
+    text-align: center;
+}
+
+.SubscriptionDetails h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    color: 8D021F;
+    margin-bottom: 20px;
+}
+
+.SubscriptionDetails table {
+    margin: 0 auto;
+    width: 80%; /* Adjust as needed */
+    border-collapse: collapse;
+}
+
+.SubscriptionDetails th,
+.SubscriptionDetails td {
+    border: 1px solid 8D021F;
+    padding: 8px;
+    text-align: center;
+}
+
+
+/* Container to center the search bar */
+.search-container {
+    text-align: center; /* Center the content */
+    padding: 10px; /* Add some padding around */
+}
+
+/* Style for the search input */
+.search-input {
+    padding: 8px 15px; /* Padding inside the input */
+    margin-right: -4px; /* Adjust spacing between input and button */
+    border: 1px solid #ccc; /* Border for the input */
+    border-right: none; /* Remove right border to blend with button */
+}
+
+/* Style for the search button */
+.search-button {
+    padding: 8px 15px; /* Padding inside the button */
+    border: 1px solid #ccc; /* Border for the button */
+    background-color: #f8f8f8; /* Background color for the button */
+    cursor: pointer; /* Cursor changes to pointer when hovering over the button */
+}
+
+/* Adjust button to remove the default outline and focus styles */
+.search-button:focus,
+.search-button:active {
+    outline: none;
+}
+
+
+
+
+
+/* Subscribe section */
+.Subscribe_Button {
+    min-height: 100px;
+    background-color: #BFC0C0;
+    text-align: center; /* Centering the button */
+    padding: 20px 0; /* Adds padding above and below the button */
+}
+
+.Subscribe_Button button {
+    background-color: 8D021F;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Adding a hover effect to the button */
+.Subscribe_Button button:hover {
+    background-color: #728080;
+}

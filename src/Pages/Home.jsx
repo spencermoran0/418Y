@@ -4,20 +4,37 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import "../CssStyle/Home.css"
 
+import { useNavigate } from 'react-router-dom';
+
 function Home() {
+
+  const navigate = useNavigate();
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      const searchTerm = event.target.value;
+      navigate(`/SearchList?searchMovie=${encodeURIComponent(searchTerm)}`);
+    }
+  };
+
+
+
   return (
     <div>
       <Navbar />
-      <section className="Home Page">
+      <section className="WelcomeMessage">
         <h1>Home Page</h1>
-
-        <div className="search-container">
-        <input type="text" className="search-input" placeholder="Search..." />
-        <button className="search-button">Search</button>
-      </div>
       </section>
 
-      
+      {/* Search BAr */}
+        <section className="SearchBar">
+        <div className="container">
+          <label htmlFor="searchInput">Search Movie</label>
+          <input type="search" id="searchInput" placeholder="Enter the movie here...." onKeyPress={handleKeyPress} />
+        </div>
+      </section>
+
 
       <section className="SubscriptionDetails">
         <h2>Membership Benefits</h2>

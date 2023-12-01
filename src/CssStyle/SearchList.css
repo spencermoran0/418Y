@@ -48,6 +48,7 @@ img {
 .SearchResults {
     background-color: #BFC0C0; /* Matching background color with SearchBar */
     padding: 20px;
+    min-height: 850px;
 }
 
 .MovieList {

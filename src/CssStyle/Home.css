@@ -1,27 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 /* Welcome section */
 .WelcomeMessage h1 {
     font-size: 40px;
     color: #8D021F;
+    background-color: #BFC0C0;
+    margin-top: 0;
 }
 
-/* 
-.header-container {
-    text-align: center;
-}
-*/
 
 .WelcomeMessage {
-    min-height: 250px;
+    min-height: 100px;
     background-color: #BFC0C0;
-}
+    margin-top: 0; /* Removes any top margin */
+  }
 
 /* Subscription Details section */
 .SubscriptionDetails {
     background-color: #BFC0C0;
     padding: 20px;
     text-align: center;
+    border: 2px solid #8D021F; /* Adding a border */
+    border-bottom: none;
 }
 
 .SubscriptionDetails h2 {
@@ -45,33 +52,43 @@
 }
 
 
-/* Container to center the search bar */
-.search-container {
+/* Updated SearchBar styles for Home page */
+.SearchBar {
+    min-height: 450px;
+    background-color:#BFC0C0;
     text-align: center; /* Center the content */
-    padding: 10px; /* Add some padding around */
 }
 
-/* Style for the search input */
-.search-input {
-    padding: 8px 15px; /* Padding inside the input */
-    margin-right: -4px; /* Adjust spacing between input and button */
-    border: 1px solid #ccc; /* Border for the input */
-    border-right: none; /* Remove right border to blend with button */
+.SearchBar .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+    max-width: 1700px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0, 40px;
+    justify-content: center;
+    min-height: 350px;
 }
 
-/* Style for the search button */
-.search-button {
-    padding: 8px 15px; /* Padding inside the button */
-    border: 1px solid #ccc; /* Border for the button */
-    background-color: #f8f8f8; /* Background color for the button */
-    cursor: pointer; /* Cursor changes to pointer when hovering over the button */
+.SearchBar label {
+    font-size: 45px;
+    color: #8D021F;
 }
 
-/* Adjust button to remove the default outline and focus styles */
-.search-button:focus,
-.search-button:active {
+.SearchBar input {
+    background-color: #0A0A0A;
+    font-size: large;
+    color: #BFC0C0;
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #8D021F;
+    padding: 5px;
     outline: none;
 }
+
 
 
 
@@ -83,6 +100,9 @@
     background-color: #BFC0C0;
     text-align: center; /* Centering the button */
     padding: 20px 0; /* Adds padding above and below the button */
+    border: 2px solid #8D021F; /* Adding a border */
+    border-top: none;
+    border-bottom: none;
 }
 
 .Subscribe_Button button {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
+import '../CssStyle/Login.css';
 
 import supabase from "../Supabase/SupabaseClient";
 
@@ -17,7 +17,7 @@ function Login() {
 
   const handleSignIn = async () => {
 
-    console.log(supabase); // Add this line to log the Supabase client
+   // console.log(supabase); // Add this line to log the Supabase client
     
     const { error } = await supabase.auth.signInWithPassword({ email, password });
 
@@ -31,15 +31,15 @@ function Login() {
   return (
     <div>
       <Navbar />
-      <section className="h-screen w-full">
-        <div className="mt-[5%] flex h-4/5 rounded-[20px]">
-          <div className="h-full w-1/2 flex justify-center items-center">
+      <section id = "loginSection" className="h-screen w-full">
+        <div  id = "loginDiv"className="mt-[5%] flex h-4/5 rounded-[20px]">
+          <div id = "LeftDiv"className="h-full w-1/2 flex justify-center items-center">
             <h1>Unlock the Magic of Cinema, One Review at a Time</h1>
           </div>
 
-          <div className="h-full w-1/2 flex justify-center items-center">
-            <div className="bg-[rgb(207,238,238)] flex flex-col justify-center items-center h-[500px] w-[500px] rounded-[50px]">
-              <input
+          <div id = "rightDiv" className="h-full w-1/2 flex justify-center items-center">
+            <div id = "formDiv" className="bg-[rgb(207,238,238)] flex flex-col justify-center items-center h-[500px] w-[500px] rounded-[50px]">
+              <input id = "emailInput"
                 type="email"
                 name="email"
                 className="mb-[10px] h-[30px] w-[300px]"
@@ -47,7 +47,7 @@ function Login() {
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
               />
-              <input
+              <input id = "passwordInput"
                 type="password"
                 name="password"
                 className="mb-[10px] h-[30px] w-[300px]"
@@ -56,14 +56,15 @@ function Login() {
                 value={password}
               />
 
-              <button
+              <div id = "loginBtn"
                 className="bg-[rgb(194,230,245)] h-[50px] w-[300px] mt-[20px] border-[4px] border-[solid] border-[black] rounded-[20px] flex justify-center items-center cursor-pointer"
                 onClick={handleSignIn}
-              >
-                Sign in
-              </button>
+              > 
+              <a>Sign in</a>
+                
+              </div>
 
-              <div
+              <div id = "signupBtn"
                 className="bg-[rgb(194,230,245)] h-[50px] w-[300px] mt-[20px] border-[4px] border-[solid] border-[black] rounded-[20px] flex justify-center items-center"
               >
                 <a href="/signup">Sign up</a>

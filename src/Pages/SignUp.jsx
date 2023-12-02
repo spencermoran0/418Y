@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import supabase from "../Supabase/SupabaseClient";
 
+import '../CssStyle/SignUp.css';
+
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 
@@ -26,10 +28,10 @@ function SignUp() {
   return (
     <div>
       <Navbar />
-    <section className="h-screen w-full flex justify-center items-center m-0">
+    <section id = "signupSection" className="h-screen w-full flex justify-center items-center m-0">
       <div>
-        <div className="flex flex-col h-[450px] w-[450px] justify-center items-center border bg-[rgb(210,237,239)] rounded-[30px] border-solid border-[black]">
-          <input
+        <div id = "signupDiv" className="flex flex-col h-[450px] w-[450px] justify-center items-center border bg-[rgb(210,237,239)] rounded-[30px] border-solid border-[black]">
+          <input id = "emailInput"
             type="email"
             name="email"
             placeholder="Email"
@@ -37,7 +39,7 @@ function SignUp() {
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
-          <input
+          <input id = "passwordInput"
             type="password"
             name="password"
             placeholder="Password"
@@ -46,10 +48,10 @@ function SignUp() {
             value={password}
           />
 
-          <div className="h-[50px] w-[250px] border bg-[rgb(171,171,245)] text-center rounded-[5px] border-solid border-[black] cursor-pointer">
-            <span className="relative top-[15px]" onClick={handleSignUp}>
-              Sign up
-            </span>
+          <div id = "signupBtn" className="h-[50px] w-[250px] border bg-[rgb(171,171,245)] text-center rounded-[5px] border-solid border-[black] cursor-pointer">
+            <a  onClick={handleSignUp}> Sign up</a>
+             
+         
           </div>
           {signUpError && <p className="mt-[20px] text-red-500">{signUpError}</p>}
         </div>

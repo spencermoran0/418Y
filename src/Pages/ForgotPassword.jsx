@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import supabase from "../Supabase/SupabaseClient";
+import '../CssStyle/ForgotPassword.css';
 
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
@@ -30,18 +31,29 @@ function ForgotPassword() {
   return (
     <div>
       <Navbar />
+
+    <div id ="outerDiv" >
+      <div id= "form" >
       <input
+      id = "emailInput"
         type="email"
         placeholder="Email"
         onChange={(e) => setEmail(e.target.value)}
         disabled={resetSent} // Disable input if reset email sent
       />
       {!resetSent && (
-        <button onClick={handleReset}>Reset Password</button>
+
+        <div id= "Btn" onClick={handleReset}>
+          <a>Reset Password</a>
+        </div>
+        
       )}
       {resetSent && (
         <p>Check your email for the reset link.</p> // Display message if reset email sent
       )}
+
+     </div>
+    </div>
       <Footer />
     </div>
   );

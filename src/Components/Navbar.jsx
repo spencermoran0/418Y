@@ -14,7 +14,7 @@ function Navbar() {
         </div>
         <nav>
           <ul>
-            <li><Link to="/MoviePage" className="Spencer">Spencer Work</Link></li>
+            <li><Link to="/MoviePage" className="RankMovie">Rank A Movie</Link></li>
             <li><Link to="/SearchBar" className="NavSearch">Search</Link></li>
             <li><Link to="/SignUp" className="NavSignUp">Sign Up</Link></li>
             <li><Link to="/Login" className="NavLogin">Login</Link></li>

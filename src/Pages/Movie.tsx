@@ -63,7 +63,8 @@ export default function MoviePage() {
 
     const addReview = async () =>{
         const {data, error} = await supabase
-            .from('reviews').insert({title, rating, review});
+            .from('reviews')
+            .upsert({title, rating, review});
         if (error) {
             console.error("Error inserting the review:", error);
         } else {
@@ -80,8 +81,8 @@ export default function MoviePage() {
     const containerStyle = {
         maxWidth: '100%',
         margin: 'auto',
-        backgroundColor: '#1F2937', // bg-gray-800
-        borderRadius: '8px', // rounded
+        backgroundColor: '#BFC0C0', // bg-gray-800
+        //borderRadius: '8px', // rounded
         padding: '32px', // p-8
         color: 'white', // text-white
     };
@@ -103,15 +104,17 @@ export default function MoviePage() {
     };
 
     const buttonStyle = {
-        backgroundColor: '#3B82F6', // A shade of blue
-        color: 'white',
+        backgroundColor: '#8D021F', // A shade of blue
+        color: 'black',
         padding: '10px 20px', // Adjust padding as needed
         borderRadius: '4px',
-        border: 'none', // Remove default border
+        border: 'black', // Remove default border
         cursor: 'pointer', // Change cursor to pointer on hover
         fontSize: '16px', // Adjust font size as needed
+        fontWeight: 'bold',
         margin: '10px 0', // Add some margin
     };
+
 
 
 
@@ -122,7 +125,7 @@ export default function MoviePage() {
             <h1 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '1rem' }}>Enter Movie Name</h1>
             <form style={{ margin: '1rem' }}>
                 <div>
-                    <label htmlFor="title" style={labelStyle}>Title</label>
+                    <label htmlFor="title" style={labelStyle}></label>
                     <input
                         type="text"
                         id="title"
@@ -145,15 +148,15 @@ export default function MoviePage() {
 
                 {!isMovieExisting && hasEnteredTitle && (
                     <div>
-                        <label htmlFor="director" style={labelStyle}>Director</label>
-                        <input
+            <h1 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '1rem' }}>Director</h1>    
+                            <input
                             type="text"
                             id="director"
                             name="director"
                             onChange={(e) => setDirector(e.target.value)}
                             style={inputStyle}
                         />
-                        <label htmlFor="genre" style={labelStyle}>Genre</label>
+            <h1 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '1rem' }}>Genre</h1>    
                         <input
                             type="text"
                             id="genre"
@@ -161,7 +164,7 @@ export default function MoviePage() {
                             onChange={(e) => setGenre(e.target.value)}
                             style={inputStyle}
                         />
-                        <label htmlFor="description" style={labelStyle}>Description</label>
+            <h1 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '1rem' }}>Description</h1>    
                         <input
                             type="text"
                             id="description"

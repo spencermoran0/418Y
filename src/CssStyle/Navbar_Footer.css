@@ -87,7 +87,7 @@ img {
     margin: 0 5px;
  }
 
- .navbar .NavSignUp:hover , .NavLogin:hover, .NavSearch:hover{
+ .navbar .NavSignUp:hover , .NavLogin:hover, .NavSearch:hover .RankMovie:hover{
     border-bottom: 2px #BFC0C0 solid;
  }
 

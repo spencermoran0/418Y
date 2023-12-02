@@ -18,6 +18,7 @@ function Navbar() {
             <li><Link to="/SearchBar" className="NavSearch">Search</Link></li>
             <li><Link to="/SignUp" className="NavSignUp">Sign Up</Link></li>
             <li><Link to="/Login" className="NavLogin">Login</Link></li>
+            <li><Link to="/Subscription" className="NavSubscription">Subscription</Link></li>
           </ul>
         </nav>
       </div>

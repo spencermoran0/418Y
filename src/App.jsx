@@ -9,6 +9,9 @@ import ForgotPassword from './Pages/ForgotPassword';
 import UserProfile from './Pages/UserProfile';
 import ResetPassword from './Pages/ResetPassword';
 import MovieProfile from './Pages/MovieProfile'; // Import your MovieProfile component
+import Subscription from './Pages/SubscriptionPage';
+import PaymentPage from './Pages/PaymentPage'; // Import your PaymentPage component
+
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
         <Route path="/user-profile" element={<UserProfile />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/SearchList" element={<SearchList />} />
+        <Route path="/Subscription" element={<Subscription />} />
+        <Route path="/payment" element={<PaymentPage />} /> {/* Add this line for PaymentPage */}
+        
         
         {/* New Route for MovieProfile */}
         <Route path="/movie/:movieId" element={<MovieProfile />} />

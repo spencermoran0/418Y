@@ -12,6 +12,14 @@ import MovieProfile from './Pages/MovieProfile'; // Import your MovieProfile com
 import Subscription from './Pages/SubscriptionPage';
 import PaymentPage from './Pages/PaymentPage'; // Import your PaymentPage component
 
+import AboutUs from './Pages/AboutUs'; // Adjust the path as needed
+import ContactUs from './Pages/ContactUs';
+import TermsAndConditions from './Pages/TermsAndConditions';
+
+// ... other imports and code ...
+
+
+
 
 function App() {
   return (
@@ -28,6 +36,10 @@ function App() {
         <Route path="/SearchList" element={<SearchList />} />
         <Route path="/Subscription" element={<Subscription />} />
         <Route path="/payment" element={<PaymentPage />} /> {/* Add this line for PaymentPage */}
+
+        <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
         
         
         {/* New Route for MovieProfile */}

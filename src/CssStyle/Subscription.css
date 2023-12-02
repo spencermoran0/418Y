@@ -54,11 +54,11 @@ img {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color:#b40c31aa;
+    background-color:#BFC0C0;
     text-align: center;
 }
 /* Why Subscribe */
-.subscription-container h2 {
+.subscription-container h2, h1 {
     font-size: 24px;
     display: flex;
     flex-direction: column;

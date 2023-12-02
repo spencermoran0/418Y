@@ -18,6 +18,10 @@ function Home() {
     }
   };
 
+  const handleSubscribeClick = () => {
+    navigate('/Subscription'); // Navigates to the Subscription page
+  };
+
 
 
   return (
@@ -63,7 +67,7 @@ function Home() {
       </section>
 
       <section className="Subscribe_Button">
-        <button>Subscribe</button>
+        <button onClick={handleSubscribeClick}>Subscribe</button>
       </section>
 
       <Footer />

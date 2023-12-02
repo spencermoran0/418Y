@@ -185,7 +185,7 @@ export default function MoviePage() {
 
                 {isMovieExisting && (
                     <div>
-                        <label htmlFor="rating" style={labelStyle}>Rating (1-5)</label>
+            <h1 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '1rem' }}>Rating (1-5)</h1>    
                         <input
                             type="range"
                             id="rating"
@@ -193,9 +193,9 @@ export default function MoviePage() {
                             min="1"
                             max="5"
                             onChange={(e) => setRating(e.target.value)}
-                            style={{ ...inputStyle, width: '66%' }} // Adjust width for range input
+                            style={{ ...inputStyle, width: '100%' }} // Adjust width for range input
                         />
-                        <label htmlFor="review" style={labelStyle}>Review</label>
+            <h1 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '1rem' }}>Review</h1>    
                         <input
                             type="text"
                             id="review"

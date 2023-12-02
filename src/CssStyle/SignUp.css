@@ -21,8 +21,7 @@
   border-radius: 30px;
 }
 
-#emailInput,
-#passwordInput {
+#signupSection input {
   height: 50px;
   width: 250px;
   margin-bottom: 50px;

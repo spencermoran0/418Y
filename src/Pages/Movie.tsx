@@ -48,7 +48,7 @@ export default function MoviePage() {
 
     const addMovie = async () => {
         const { data, error } = await supabase
-            .from("movies")
+            .from("Movies")
             .upsert([{ title, genre, director }]);
 
         if (error) {

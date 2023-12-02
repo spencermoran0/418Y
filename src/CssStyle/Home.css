@@ -53,13 +53,13 @@
 
 
 /* Updated SearchBar styles for Home page */
-.SearchBar {
+.SearchBarHome {
     min-height: 450px;
     background-color:#BFC0C0;
     text-align: center; /* Center the content */
 }
 
-.SearchBar .container {
+.SearchBarHome .container {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
@@ -72,12 +72,12 @@
     min-height: 350px;
 }
 
-.SearchBar label {
+.SearchBarHome label {
     font-size: 45px;
     color: #8D021F;
 }
 
-.SearchBar input {
+.SearchBarHome input {
     background-color: #0A0A0A;
     font-size: large;
     color: #BFC0C0;

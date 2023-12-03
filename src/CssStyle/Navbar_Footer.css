@@ -80,14 +80,14 @@ img {
     display: flex;
  }
 
- .navbar .NavSignUp, .NavLogin, .NavSearch {
+ .navbar .NavSignUp, .NavLogin, .NavSearch, .RankMovie , .NavSubscription {
     padding: 10px;
     color: #BFC0C0;
     font-size: 18px;
     margin: 0 5px;
  }
 
- .navbar .NavSignUp:hover , .NavLogin:hover, .NavSearch:hover .RankMovie:hover{
+ .navbar .NavSignUp:hover , .NavLogin:hover, .NavSearch:hover .RankMovie:hover .NavProfileIcon:hover , .RankMovie:hover , .NavSearch:hover , .NavSubscription:hover {
     border-bottom: 2px #BFC0C0 solid;
  }
 
@@ -112,6 +112,32 @@ img {
     width: auto;
     align-items: center;
     padding-top: 2px;
+}
+
+.NavLogout {
+    padding: 10px;
+    color: #BFC0C0;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.NavLogout:hover {
+    color: #8D021F; /* Change color on hover */
+}
+
+
+.NavProfileIcon {
+    height: 30px; /* Adjust the size as needed */
+    width: 30px; /* Maintain aspect ratio */
+    border-radius: 50%; /* To make it round */
+    margin-right: 10px; /* Adjust margin as needed */
+    margin-left: 10px;
+    cursor: pointer; /* Change cursor on hover */
+    object-fit: cover; /* Ensures the image is scaled correctly within the element */
+    vertical-align: middle; /* Align vertically with other navbar items */
+    border: 2px solid #BFC0C0; /* Optional: Adds a border around the profile icon */
 }
 
 /* Navbar Styiling Complete */

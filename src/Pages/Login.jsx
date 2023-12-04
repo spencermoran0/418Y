@@ -39,7 +39,7 @@ function Login() {
 
           <div id = "rightDiv" className="h-full w-1/2 flex justify-center items-center">
             <div id = "formDiv" className="bg-[rgb(207,238,238)] flex flex-col justify-center items-center h-[500px] w-[500px] rounded-[50px]">
-              <input id = "emailInput"
+              <input class = "Inputs"
                 type="email"
                 name="email"
                 className="mb-[10px] h-[30px] w-[300px]"
@@ -47,7 +47,7 @@ function Login() {
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
               />
-              <input id = "passwordInput"
+              <input  class = "Inputs"
                 type="password"
                 name="password"
                 className="mb-[10px] h-[30px] w-[300px]"
@@ -60,7 +60,7 @@ function Login() {
                 className="bg-[rgb(194,230,245)] h-[50px] w-[300px] mt-[20px] border-[4px] border-[solid] border-[black] rounded-[20px] flex justify-center items-center cursor-pointer"
                 onClick={handleSignIn}
               > 
-              <a>Sign in</a>
+              <a href=''>Sign in</a>
                 
               </div>
 

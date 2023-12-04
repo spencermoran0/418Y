@@ -31,6 +31,7 @@ export default function Logout() {
 
         <div>
        <Navbar/>
+       
         <section className=" h-screen w-full ">
           <div className={
               " inline-block px-4 py-2 text-white bg-green-500 border border-green-500 rounded hover:bg-green-600 hover:border-green-600"
@@ -44,6 +45,8 @@ export default function Logout() {
         </section>
     
          <Footer/>
+
+         
         </div>
       );
   };

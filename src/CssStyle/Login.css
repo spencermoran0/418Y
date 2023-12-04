@@ -12,7 +12,7 @@ a {
 #loginDiv {
   margin-top: 5%;
   display: flex;
-  height: 80%; /* 4/5 is equivalent to 80% */
+  height: 80%;
   border-radius: 20px;
 }
 #leftDiv {
@@ -42,9 +42,9 @@ a {
   padding: 20px; /* Added padding for better spacing */
 }
 
-input {
+.Inputs {
   margin-bottom: 10px;
-  height: 30px;
+  height: 40px;
   width: 300px;
 }
 #loginBtn,
@@ -60,4 +60,16 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#loginBtn:hover a {
+  color: red;
+}
+
+#signupBtn:hover a {
+  color: red;
+}
+
+a:hover {
+  color: red;
 }

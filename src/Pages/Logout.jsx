@@ -6,7 +6,7 @@ import supabase from "../Supabase/SupabaseClient";
 
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
-
+// Logout component
 export default function Logout() {
   const router = useNavigate();
   
@@ -15,7 +15,7 @@ export default function Logout() {
 
   const handleSignOut = async () => {
    const{error} =  await supabase.auth.signOut();
-    router.refresh();
+    
 
     if(!error){
       router('/login');
@@ -24,13 +24,17 @@ export default function Logout() {
 
     }
 
+   
+
 }
+
+
 
 
     return (
 
         <div>
-       <Navbar/>
+       
        
         <section className=" h-screen w-full ">
           <div className={
@@ -41,10 +45,10 @@ export default function Logout() {
             <a>Logout</a>
           </div>
     
-          <p >{logouterror} this is a message</p>
+          <p >{logouterror}</p>
         </section>
     
-         <Footer/>
+         
 
          
         </div>
@@ -53,15 +57,5 @@ export default function Logout() {
 
 
 
-  /** 
 
-  const getUser = async() => {
 
-    const { data: { user } } = await supabase.auth.getUser();
-
-    console.log(user);
-  }
-
-  */
-
-  //getUser()

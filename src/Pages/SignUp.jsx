@@ -13,7 +13,7 @@ function SignUp() {
   const [password, setPassword] = useState('');
   const [signUpError, setSignUpError] = useState('');
   const navigate = useNavigate(); // Replace useHistory with useNavigate
-
+ // auth.signup takes an email and a password.
   const handleSignUp = async () => {
     const { error } = await supabase.auth.signUp({ email, password });
 

@@ -42,11 +42,10 @@ a {
   padding: 20px; /* Added padding for better spacing */
 }
 
-<<<<<<< HEAD
-.Inputs {
-=======
+
+
 #loginSection input {
->>>>>>> 9e856566dabca54e33648ccf3f61f71b20ed665a
+
   margin-bottom: 10px;
   height: 40px;
   width: 300px;

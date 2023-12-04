@@ -60,7 +60,7 @@ function Login() {
                 className="bg-[rgb(194,230,245)] h-[50px] w-[300px] mt-[20px] border-[4px] border-[solid] border-[black] rounded-[20px] flex justify-center items-center cursor-pointer"
                 onClick={handleSignIn}
               > 
-              <a href=''>Sign in</a>
+              <a href='/profile-page'>Sign in</a>
                 
               </div>
 

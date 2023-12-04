@@ -32,7 +32,7 @@ function Home() {
       </section>
 
       {/* Search BAr */}
-        <section className="SearchBar">
+        <section className="SearchBarHome">
         <div className="container">
           <label htmlFor="searchInput">Search Movie</label>
           <input type="search" id="searchInput" placeholder="Enter the movie here...." onKeyPress={handleKeyPress} />

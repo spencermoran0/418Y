@@ -47,7 +47,7 @@ function Login() {
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
               />
-              <input  class = "Inputs"
+              <input id = "passwordInput"
                 type="password"
                 name="password"
                 className="mb-[10px] h-[30px] w-[300px]"

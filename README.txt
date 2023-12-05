@@ -30,6 +30,7 @@ Division of work:
 Additional Work:
     Navbar/footer               - Ion
     Routing                     - Ion
+    CSS styling                 - Ion
     Supabase setup              - Spencer
 
     Feasability Study           - Akhil

@@ -6,6 +6,8 @@ import supabase from "../Supabase/SupabaseClient";
 
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+
+import '../CssStyle/logout.css'
 // Logout component
 export default function Logout() {
   const router = useNavigate();

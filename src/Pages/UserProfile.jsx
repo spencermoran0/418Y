@@ -11,6 +11,8 @@ import IMDb from '../Components/IMDb.png';
 import "../CssStyle/UserProfile.css";
 
 
+// This file is created by Nitin Krishnani
+
 function UserProfile() {
   const [isVisible, setIsVisible] = useState(true);
   const [email, setEmail] = useState('');

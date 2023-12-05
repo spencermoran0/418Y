@@ -3,6 +3,8 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import '../CssStyle/TermsAndConditions.css';
 
+// This file is created by Nitin Krishnani
+
 function TermsAndConditions() {
     return (
         <div>

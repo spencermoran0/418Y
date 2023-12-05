@@ -2,10 +2,21 @@
 
 #logoutBtn {
   display: flex;
-  justify-content: end;
+  justify-content: right;
   margin-right: 50px;
+  background-color: #BFC0C0;
+  color: black;
+  padding: 14px;
 }
 
-#btnText {
-  color: black;
+#logoutBtn a{
+  color:#BFC0C0;
+  background-color:#8D021F;
+  padding: 4px;
+  border-radius: 10px; /* Rounded corners for the form */
+  margin: 20px;
+  
 }
+
+
+

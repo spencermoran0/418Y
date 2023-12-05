@@ -8,18 +8,18 @@ import MoviePage from './Pages/Movie.tsx';
 import ForgotPassword from './Pages/ForgotPassword';
 import UserProfile from './Pages/UserProfile';
 import ResetPassword from './Pages/ResetPassword';
-import MovieProfile from './Pages/MovieProfile'; // Import your MovieProfile component
+import MovieProfile from './Pages/MovieProfile'; 
 import Subscription from './Pages/SubscriptionPage';
-import PaymentPage from './Pages/PaymentPage'; // Import your PaymentPage component
+import PaymentPage from './Pages/PaymentPage'; 
 
-import AboutUs from './Pages/AboutUs'; // Adjust the path as needed
+import AboutUs from './Pages/AboutUs'; 
 import ContactUs from './Pages/ContactUs';
 import TermsAndConditions from './Pages/TermsAndConditions';
 
-// ... other imports and code ...
 
 
 
+// This file is created by Ion Efros
 
 function App() {
   return (

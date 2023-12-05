@@ -15,6 +15,9 @@ import { useSearchParams } from 'react-router-dom';
 /* Supabase Imports */
 import supabase from "../Supabase/SupabaseClient";
 
+
+// This file is created by Ion Efros
+
 function SearchList() {
 
   // useState hook to manage movies state
@@ -31,11 +34,10 @@ function SearchList() {
     const fetchMovies = async () => {
       let { data: Movies, error } = await supabase
       .from('Movies')
-      .select('id, title, genre, director, description') // Ensure 'id' is included
+      .select('id, title, genre, director, description')
       .ilike('title', `%${searchTerm}%`);
     
   
-      // ... [error handling remains unchanged]
       setMovies(Movies);
     };
   

@@ -5,6 +5,9 @@ import Footer from '../Components/Footer';
 import supabase from '../Supabase/SupabaseClient'; // Import your Supabase client
 import "../CssStyle/MovieProfile.css";
 
+
+// This file is created by Ion Efros
+
 function MovieProfile() {
   const [movie, setMovie] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -17,8 +20,8 @@ function MovieProfile() {
         let { data, error } = await supabase
           .from('Movies')
           .select('*') // Select all fields, or specify fields you need
-          .eq('id', movieId) // Filter to get the movie with the provided ID
-          .single(); // Assuming ID is unique and returns a single record
+          .eq('id', movieId) 
+          .single(); 
 
         if (error) {
           throw error;

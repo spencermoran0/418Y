@@ -1,130 +1,66 @@
-import React, { useEffect, useState } from "react";
-import supabase from "../Supabase/SupabaseClient";
-
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
-import { Link, Route } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
-
-
+import supabase from "../Supabase/SupabaseClient";
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
+import Logout from './Logout';
 import "../CssStyle/logout.css";
-
-
-
-// In LogoutButton.jsx
-import Logout from './logout';
-
 
 function UserProfile() {
   const [isVisible, setIsVisible] = useState(true);
-  
-  const [email, setEmail] = useState("");
-  const [bio, setBio] = useState("");
+  const [email, setEmail] = useState('');
+  const [profilePicUrl, setProfilePicUrl] = useState('');
   const [loading, setLoading] = useState(false);
-
-  // I tried to toggle logout based on user status, but some rendering issues occurred, causing a weird inconsistencies.
- /** 
-  const toggleVisbility = async() => {
-
-    
-
-
-
-
-    const { data: { user } } = await supabase.auth.getUser();
-  
-    if(user != null){
-      setIsVisible(!isVisible);
-    }
-  }
-
-  toggleVisbility();
-
-  */
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProfile = async () => {
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
+      const { data: { user } } = await supabase.auth.getUser();
       if (user) {
         setEmail(user.email);
-        // Fetch the user's bio from the database
-        const { data, error } = await supabase
-          .from("users")
-          .select("bio")
-          .eq("email", user.email)
-          .single();
-        if (data) setBio(data.bio);
       }
     };
 
     fetchProfile();
   }, []);
 
-  const updateBio = async () => {
-    setLoading(true);
-
-    // Logging the values before making the API call
-    console.log("Updating bio for email:", email);
-    console.log("Bio to update:", bio);
-
-    const { data, error } = await supabase
-      .from("users")
-      .update({ bio: bio })
-      .eq("email", email);
-    setLoading(false);
-    if (error) {
-      console.error("Error updating bio:", error);
-      alert("Error updating bio. Check console for details.");
-    } else {
-      alert("Bio updated successfully");
-    }
+  const handleHomeClick = () => {
+    navigate('/');
   };
 
-
- 
-  
-  
-  
-
-
- 
-
-  
-  
-
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navbar />
 
-
-     {isVisible && (
-      <div id="logoutBtn">
-          <div>
-            
-            <Logout></Logout>
-          </div>
-
-        
-
-          
+      {isVisible && (
+        <div id="logoutBtn">
+          <Logout></Logout>
         </div>
-     )}
-      <h1>User Profile</h1>
-      {email ? <p>Email: {email}</p> : <p>Loading...</p>}
-      <div>
-       
-        <textarea
-          value={bio}
-          onChange={(e) => setBio(e.target.value)}
-          placeholder="Enter your bio..."
-        />
-        <button onClick={updateBio} disabled={loading}>
-          {loading ? "Updating..." : "Update Bio"}
-        </button>
+      )}
+
+      {/* Profile Content */}
+      <div style={{ display: 'flex', justifyContent: 'center', padding: '20px', flex: 1 }}>
+        <div style={{ width: '60%' }}>
+          <h1>Welcome to Your Profile</h1>
+          {email ? <p>Email: {email}</p> : <p>Loading...</p>}
+          <div>
+            <p>Discover more amazing features on our homepage!</p>
+            <button onClick={handleHomeClick}>Go to Homepage</button>
+          </div>
+        </div>
+
+        {/* Partners Column */}
+        <div style={{ width: '20%', textAlign: 'left' }}>
+          <h3>Visit our Partners!</h3>
+          <a href="https://www.imdb.com/" target="_blank" rel="noopener noreferrer">
+            <img src="/path_to_imdb_logo.jpg" alt="IMDb" style={{ width: '100%' }} />
+          </a>
+          <a href="https://www.fandango.com/" target="_blank" rel="noopener noreferrer">
+            <img src="/path_to_fandango_logo.jpg" alt="Fandango" style={{ width: '100%' }} />
+          </a>
+        </div>
       </div>
+
       <Footer />
     </div>
   );

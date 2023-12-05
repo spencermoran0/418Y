@@ -16,7 +16,7 @@ export default function Logout() {
   const handleSignOut = async () => {
    const{error} =  await supabase.auth.signOut();
     
-
+    // redirect back to the login page after the user sucessfully signs out.
     if(!error){
       router('/login');
     } else {

@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import supabase from "../Supabase/SupabaseClient";
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import Logout from './Logout';
 import "../CssStyle/logout.css";
+import { Link } from 'react-router-dom'; // Import Link
+import Fandango from '../Components/Fandango.png';
+import IMDb from '../Components/IMDb.png';
 
 function UserProfile() {
   const [isVisible, setIsVisible] = useState(true);
@@ -52,12 +55,10 @@ function UserProfile() {
         {/* Partners Column */}
         <div style={{ width: '20%', textAlign: 'left' }}>
           <h3>Visit our Partners!</h3>
-          <a href="https://www.imdb.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/path_to_imdb_logo.jpg" alt="IMDb" style={{ width: '100%' }} />
-          </a>
-          <a href="https://www.fandango.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/path_to_fandango_logo.jpg" alt="Fandango" style={{ width: '100%' }} />
-          </a>
+          
+          <Link to="https://www.imdb.com/"><img src={IMDb} alt="Descriptive Text" className="IMDb" /> </Link>
+          <Link to="https://www.fandango.com/"><img src={Fandango} alt="Descriptive Text" className="Fandango" /> </Link>
+          
         </div>
       </div>
 

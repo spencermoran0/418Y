@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import supabase from "../Supabase/SupabaseClient";
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
-import Logout from './logout';
+import Logout from './Logout';
 import { Link } from 'react-router-dom'; // Import Link
 import Fandango from '../Components/Fandango.png';
 import IMDb from '../Components/IMDb.png';

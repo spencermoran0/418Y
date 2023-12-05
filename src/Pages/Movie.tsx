@@ -115,12 +115,17 @@ export default function MoviePage() {
         margin: '10px 0', // Add some margin
     };
 
-
+    const mainContainerStyle = {
+        minHeight: '850px',
+        backgroundColor: '#BFC0C0', // bg-gray-800
+    };
 
 
     return (
         <div>
              <Navbar />
+
+             <div style={mainContainerStyle}>
         <div style={containerStyle}>
             <h1 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '1rem' }}>Enter Movie Name</h1>
             <form style={{ margin: '1rem' }}>
@@ -214,6 +219,7 @@ export default function MoviePage() {
                     </div>
                 )}
             </form>
+        </div>
         </div>
         <Footer />
         </div>

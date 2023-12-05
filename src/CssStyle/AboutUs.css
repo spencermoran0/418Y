@@ -1,0 +1,38 @@
+/* AboutUs.css */
+
+/* About Us Content Area */
+.AboutUsCon {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding and border in the width */
+    min-height: 850px;
+}
+
+.AboutUsCon h1, .AboutUsCon h2 {
+    color: #5E1914; /* Deep brown for headings */
+    text-align: center; /* Center align headings */
+}
+
+.AboutUsCon p {
+    color: #0A0A0A; /* Darker text color for better readability */
+    font-size: 18px; /* Slightly larger font size */
+    width: 80%; /* Adjust width to spread the text more */
+    margin: 0 auto; /* Center align paragraphs */
+    text-align: left;
+}
+
+/* Section Styling */
+.AboutUsCon section {
+    background-color: #FFFFFF; /* White background for sections */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 80%; /* Set width for the sections */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

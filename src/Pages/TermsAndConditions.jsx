@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
-import '../CssStyle/Navbar_Footer.css';
+import '../CssStyle/TermsAndConditions.css';
 
 function TermsAndConditions() {
     return (
         <div>
             <Navbar />
-            <div className="page-content">
+            <div className="terms-conditions-container">
                 <h1>Terms and Conditions</h1>
                 <p>
                     Welcome to MovieRanker! These terms and conditions outline the rules and regulations for the use of 

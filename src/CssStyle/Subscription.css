@@ -1,49 +1,4 @@
 
-/* Common Styles */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color:  #BFC0C0;
-}
-
-h1, h2 {
-    font-family: 'Dancing Script', cursive;
-
-    font-weight: 500;
-    line-height: 1.2;
-    margin: 10px 0;
-}
-
-p {
-    margin: 10px 0;
-}
-
-img {
-    width: 100%;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.container {
-    max-width: 1700px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-}
 
 /* Subscription Page */
 .subscription-container {
@@ -94,4 +49,6 @@ img {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 300px;
+    background-color: black;
+    color: #BFC0C0;
 }

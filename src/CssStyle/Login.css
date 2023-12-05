@@ -50,6 +50,8 @@ a {
   height: 40px;
   width: 300px;
 }
+
+
 #loginBtn,
 #signupBtn {
   background-color: rgb(194, 230, 245);
@@ -66,13 +68,61 @@ a {
 }
 
 #loginBtn:hover a {
-  color: red;
+  color: white;
+  font-weight: 1000;
 }
 
 #signupBtn:hover a {
-  color: red;
+  color: white;
+  font-weight: 1000;
 }
 
 a:hover {
-  color: red;
+  color: white;
+  font-weight: 1000;
 }
+
+
+
+/* Main Background */
+body {
+  background-color: #BFC0C0; /* Light main background */
+}
+
+/* Form Background */
+#formDiv {
+  background-color: #0A0A0A; /* Black for form background */
+  color: #BFC0C0; /* Light text for form */
+}
+
+/* Text Colors */
+h1, a, p {
+  color: #BFC0C0; /* Light color for text on black background */
+}
+
+/* Button Styling */
+#loginBtn, #signupBtn {
+  background-color: #5E1914; /* Deep brown for button background */
+  color: #BFC0C0; /* Light color for button text */
+  border-color: #8D021F; /* Maroon for border */
+}
+
+/* Input Fields */
+input[type=email], input[type=password] {
+  background-color: #BFC0C0; /* Input background matches main background */
+  color: #0A0A0A; /* Dark text for input */
+  border: 2px solid #5E1914; /* Border color */
+  font-family: 'Lato', sans-serif; /* Stylish font */
+  font-size: 16px; /* Readable font size */
+  padding: 10px; /* Comfortable padding inside input fields */
+  border-radius: 10px; /* Rounded corners */
+  font-weight: 1000; /* Make text bold */
+}
+
+
+/* Navbar and Footer */
+.navbar, .footer {
+  background-color: #0A0A0A; /* Dark background for navbar and footer */
+  color: #BFC0C0; /* Light text */
+}
+

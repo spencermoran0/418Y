@@ -1,0 +1,109 @@
+/* UserProfile.css */
+
+/* Main Container */
+.user-profile-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #BFC0C0; /* Light main background */
+}
+
+/* Navbar and Footer */
+.navbar, .footer {
+    background-color: #0A0A0A; /* Dark background for navbar and footer */
+    color: #BFC0C0; /* Light text */
+}
+
+/* Main Content Area */
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex: 1;
+    color: #0A0A0A; /* Dark text for readability */
+}
+
+/* Profile Section */
+.profile-section {
+    width: 60%;
+}
+
+.profile-section h1 {
+    color: #5E1914; /* Deep brown for headings */
+    margin-bottom: 20px;
+}
+
+.profile-section p {
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+button {
+    background-color: #5E1914; /* Deep brown for button background */
+    color: #BFC0C0; /* Light color for button text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+button:hover {
+    background-color: #8D021F; /* Maroon for hover effect */
+}
+
+/* Partners Column */
+.partners-column {
+    width: 20%;
+    text-align: left;
+}
+
+.partners-column h3 {
+    color: #5E1914; /* Deep brown for headings */
+}
+
+/* Partner Links */
+.IMDb, .Fandango {
+    margin-bottom: 10px;
+    width: 100%; /* Adjust size as needed */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+
+/* Email Text Styling */
+.profile-section .email-text {
+    color: #0A0A0A; /* Black color for email text */
+    /* Add more styling if needed */
+}
+
+/* Partners Column Heading */
+.partners-column h3 {
+    color: #5E1914; /* Deep brown for headings */
+    font-size: 24px; /* Larger font size for the heading */
+}
+
+
+.VisitPartners{
+    font-size: 45px;
+    padding-bottom: 15px;
+}
+
+
+.user-profile-container p{
+    color: #0A0A0A;
+    font-size: 35px;
+}
+
+.user-profile-container h1{
+    font-size: 55px;
+}
+
+#UserButton{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px;
+    flex: 1;
+    min-height: 50px;
+}

@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import supabase from '../Supabase/SupabaseClient'; // Import your Supabase client
+import "../CssStyle/MovieProfile.css";
 
 function MovieProfile() {
   const [movie, setMovie] = useState(null);

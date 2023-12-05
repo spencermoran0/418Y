@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
-import '../CssStyle/Navbar_Footer.css';
+import '../CssStyle/AboutUs.css';
 
 function AboutUs() {
     return (
-        <div>
+        <div className="about-us-container">
             <Navbar />
-            <div className="page-content">
+            <div className="AboutUsCon"> 
                 <h1>About Us</h1>
                 <section>
                     <h2>Our Mission</h2>

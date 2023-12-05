@@ -1,0 +1,71 @@
+/* ContactUs.css or Navbar_Footer.css */
+
+/* Main Container */
+.page-content {
+    background-color: #FFFFFF; /* White background for content area */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Set max width for larger screens */
+    margin: auto; /* Center the container */
+    margin-top: 20px; /* Space from navbar */
+    margin-bottom: 20px; /* Space above footer */
+    text-align: left;
+}
+
+.page-content h1, .page-content h2 {
+    color: #5E1914; /* Deep brown for headings */
+    text-align: center; /* Center align headings */
+}
+
+.page-content p {
+    color: #0A0A0A; /* Darker text color for better readability */
+    font-size: 18px; /* Slightly larger font size */
+    margin-bottom: 20px;
+}
+
+/* Contact Form Styling */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+    width: 100%; /* Adjust based on preference */
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%; /* Full width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #5E1914; /* Deep brown for button */
+    color: #FFFFFF; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #8D021F; /* Maroon for hover effect */
+}
+
+/* Direct Contact Styling */
+.direct-contact {
+    margin-top: 20px;
+}

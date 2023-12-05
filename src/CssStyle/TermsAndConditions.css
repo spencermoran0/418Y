@@ -1,0 +1,40 @@
+/* TermsAndConditions.css */
+
+/* Main Container */
+.terms-conditions-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #BFC0C0; /* Light main background */
+    align-items: center; /* Center align horizontally */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in the width */
+    min-width: 100%;
+}
+
+/* Content Area */
+.terms-conditions-container {
+    background-color: #FFFFFF; /* White background for content area */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Set max width for larger screens */
+    text-align: left;
+}
+
+.terms-conditions-container h1, .page-content h2 {
+    color: #5E1914; /* Deep brown for headings */
+    text-align: center; /* Center align headings */
+}
+
+.terms-conditions-container p, .page-content ul {
+    color: #0A0A0A; /* Darker text color for better readability */
+    font-size: 18px; /* Slightly larger font size */
+    margin-bottom: 20px;
+}
+
+.terms-conditions-container ul {
+    list-style-type: disc; /* Disc style for list items */
+    margin-left: 20px; /* Indent list items */
+}

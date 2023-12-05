@@ -1,23 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
+/* Main Movie Profile Styling */
 .movie-profile {
-  background-color: #BFC0C0;
-  padding: 20px;
-  margin: 20px auto;
+  background-color: #FFFFFF; /* White background for content area */
+  padding: 40px;
+  margin: 40px auto;
   max-width: 800px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Lato', sans-serif; /* Lato font for a cleaner look */
 }
 
 .movie-profile h1 {
-  color: #8D021F;
+  color: #8D021F; /* Maroon color for the title */
+  font-size: 2.5em; /* Larger font size for the title */
   text-align: center;
+  margin-bottom: 30px; /* Added space below the title */
 }
 
 .movie-profile p {
-  color: #0A0A0A;
-  font-size: 1.1em;
-  margin: 10px 0;
+  color: #0A0A0A; /* Dark color for text */
+  font-size: 1.2em; /* Slightly larger font size for better readability */
+  margin: 15px 0; /* More space around paragraphs */
+  line-height: 1.6; /* Improved line height for readability */
 }
 
-/* Add additional styling as needed */
+/* Genre, Director, and Description Headings */
+.movie-profile p strong {
+  color: #5E1914; /* Deep brown for strong tags */
+  font-weight: bold;
+}
+
+/* Additional styling as needed for other elements */

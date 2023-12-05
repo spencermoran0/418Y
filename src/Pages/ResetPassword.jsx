@@ -4,6 +4,7 @@ import supabase from "../Supabase/SupabaseClient";
 import "../CssStyle/ResetPassword.css";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+//This file is created by Akhil Nair
 
 function ResetPassword() {
   const [searchParams] = useSearchParams();

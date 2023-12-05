@@ -8,6 +8,8 @@ import supabase from "../Supabase/SupabaseClient";
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 
+// This file is created by Akhil Nair
+
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -20,7 +22,7 @@ function Login() {
    // console.log(supabase); // Add this line to log the Supabase client
     
     const { error } = await supabase.auth.signInWithPassword({ email, password });
-
+    // If an error occurs, it will be prompted to the user.
     if (error) {
       setLoginError('Authentication Failed: ' + error.message);
     } else {

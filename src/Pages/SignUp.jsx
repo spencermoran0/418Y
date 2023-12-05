@@ -5,6 +5,8 @@ import supabase from "../Supabase/SupabaseClient";
 
 import '../CssStyle/SignUp.css';
 
+//This file is created by Akhil Nair
+
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 

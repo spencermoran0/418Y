@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import supabase from "../Supabase/SupabaseClient";
 import '../CssStyle/ForgotPassword.css';
 
+//This file is created by Akhil Nair
+
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 

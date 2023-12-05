@@ -81,16 +81,16 @@ export default function MoviePage() {
     const containerStyle = {
         maxWidth: '100%',
         margin: 'auto',
-        backgroundColor: '#1F2937', // bg-gray-800
+        backgroundColor: '#BFC0C0', // bg-gray-800
         borderRadius: '8px', // rounded
         padding: '32px', // p-8
-        color: 'white', // text-white
+        color: 'black', // text-white
     };
 
     const labelStyle = {
         display: 'block',
         fontSize: '0.875rem', // text-sm
-        fontWeight: '500', // font-medium
+        fontWeight: '1000', // font-medium
     };
 
     const inputStyle = {
@@ -104,14 +104,15 @@ export default function MoviePage() {
     };
 
     const buttonStyle = {
-        backgroundColor: '#3B82F6', // A shade of blue
-        color: 'white',
+        backgroundColor: '#8D021F', // A shade of blue
+        color: '#BFC0C0',
         padding: '10px 20px', // Adjust padding as needed
         borderRadius: '4px',
-        border: 'none', // Remove default border
+        border: 'black', // Remove default border
         cursor: 'pointer', // Change cursor to pointer on hover
         fontSize: '16px', // Adjust font size as needed
         margin: '10px 0', // Add some margin
+        fontWeight: 'bold',
     };
 
     const mainContainerStyle = {
